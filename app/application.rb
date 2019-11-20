@@ -7,6 +7,8 @@ class Application
       item = req.path.split("/items/").last
       if true
       else
+        resp.status=400
+        resp.write "Item not found"
       end
     else
       resp.status=404
