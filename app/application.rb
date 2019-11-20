@@ -8,7 +8,7 @@ class Application
       if item == @@items.find{|x| x.name == item}
         item = @@items.find{|x| x.name == item}
         resp.status=200
-        resp.write "Item Price #{item.price}"
+        resp.write item.price
       else
         resp.status=400
         resp.write "Item not found"
