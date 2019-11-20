@@ -5,6 +5,9 @@ class Application
 
     if req.path.match("/items/")
       item = req.path.split("/items/").last
+      if
+      else
+      end
 
     else
       resp.status=404
